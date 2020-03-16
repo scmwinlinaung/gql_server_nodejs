@@ -7,7 +7,7 @@ const createServer = require('http').createServer;
 const { ApolloServer, gql } = require('apollo-server-express');
 
 
-mongoose.connect('mongodb://localhost/Account')
+mongoose.connect('mongodb://localhost:27017/Account')
 
 mongoose.connection.once('open', () => {
     console.log('conneted to database');
